@@ -2,6 +2,7 @@ public class Comensal implements Runnable{
     private String nombre;
     private Mesa mesa;
     private final int TIEMPO_CONSUMO;
+    private final int LIMITE_MAGDALENAS = 5;
 
     public Comensal(String comersalNombre,int tiempoConsumo, Mesa mesa){
         this.nombre = comersalNombre;
@@ -32,7 +33,7 @@ public class Comensal implements Runnable{
     @Override
     public void run() {
 
-        for (int i = 0; i < mesa.getCantidadMagdalenas(); i++) {
+        for (int i = 0; i < LIMITE_MAGDALENAS; i++) {
             try {
                 this.mesa.cogerMagdalena(this.nombre,this.TIEMPO_CONSUMO);
 
