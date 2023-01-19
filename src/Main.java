@@ -6,11 +6,11 @@ public class Main {
 
             Mesa mesa = new Mesa(15);
 
-            Thread camilo = new Thread(new Comensal("Camilo",2,mesa));
+            Thread camilo = new Thread(new Comensal("Camilo",10,mesa));
             camilo.setPriority(Thread.MAX_PRIORITY);
-            Thread fabian = new Thread(new Comensal("Fabian",2,mesa));
+            Thread fabian = new Thread(new Comensal("Fabian",10,mesa));
             fabian.setPriority(Thread.MIN_PRIORITY);
-            Thread manuel = new Thread(new Comensal("Manuel",2,mesa));
+            Thread manuel = new Thread(new Comensal("Manuel",10,mesa));
             manuel.setPriority(Thread.NORM_PRIORITY);
 
             camilo.start();
