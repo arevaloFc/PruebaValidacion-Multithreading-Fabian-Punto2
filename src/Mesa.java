@@ -1,8 +1,8 @@
 public class Mesa {
     private int cantidadMagdalenas;
 
-    public Mesa(int cantidadMagdalena){
-        this.cantidadMagdalenas = cantidadMagdalena;
+    public Mesa(int cantidadMagdalenas){
+        this.cantidadMagdalenas = cantidadMagdalenas;
     }
 
     synchronized public void cogerMagdalena(String comensalNombre, int TIEMPO_CONSUMO) throws InterruptedException {
@@ -16,7 +16,7 @@ public class Mesa {
         return cantidadMagdalenas;
     }
 
-    public void setCantidadMagdalenas(int cantidadMagdalena) {
-        this.cantidadMagdalenas = cantidadMagdalena;
+    public void setCantidadMagdalenas(int cantidadMagdalenas) {
+        this.cantidadMagdalenas = cantidadMagdalenas;
     }
 }
