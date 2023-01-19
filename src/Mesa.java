@@ -9,7 +9,7 @@ public class Mesa {
         System.out.println( comensalNombre + " ha cogido una magdalena de la mesa");
         this.cantidadMagdalenas = cantidadMagdalenas - 1;
         Thread.sleep(TIEMPO_CONSUMO);
-        System.out.println( comensalNombre + " se ha terminado de comer una magdalena" + " quedan --> " + cantidadMagdalenas);
+        System.out.println( comensalNombre + " se ha terminado de comer una magdalena");
     }
 
     public int getCantidadMagdalenas() {
